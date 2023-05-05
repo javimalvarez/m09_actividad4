@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
 </head>
+
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="img/logo.png" title="Stark Industries logo" alt="Stark Industries logo"/></a>
+            <img src="img/logo.png" title="Stark Industries logo" alt="Company logo" />
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li>
-                    <a href="#">Stark Industries</a>
+                    <a href="#">Stark Co</a>
                     <ul>
-                        <li><a href="#">Tony Stark and the Company</a></li>
-                        <li><a href="#">S.H.I.E.L.D. agency</a></li>
-                        <li><a href="#">Alien military technology</a></li>
+                        <li><a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Anthony_Stark">Tony Stark</a>
+                        </li>
+                        <li><a href="https://marvelcinematicuniverse.fandom.com/es/wiki/S.H.I.E.L.D.">S.H.I.E.L.D.
+                                agency</a></li>
+                        <li><a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Industrias_Stark">The
+                                Company</a></li>
                     </ul>
                 </li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="login.html">Sign in</a></li>
             </ul>
         </nav>
     </header><br><br><br><br>
     <main class="form-container">
         <h1>Register here!!</h1><br><br><br>
-        <form action="">
+        <form action method="POST">
             <div class="border-form">
                 <div class="form-section">
                     <label for="username">username</label>
-                    <input type="text" name="username" id="username" autofocus required tabindex="5"/>
+                    <input type="text" name="username" id="username" autofocus required />
                     <label for="name">Name</label>
-                    <input type="text" name="name" id="name" required tabindex="1"/><br><br>
+                    <input type="text" name="name" id="name" required /><br><br>
                     <label for="birthdate">Birth date</label>
-                    <input type="date" name="birthdate" id="birthdate" required tabindex="2"/>
+                    <input type="date" name="birthdate" id="birthdate" required />
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="example@example.com" required tabindex="6"><br><br>
+                    <input type="email" name="email" id="email" placeholder="example@example.com" required><br><br>
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="**************" required tabindex="7">
+                    <input type="password" name="password" id="password" placeholder="**************" required>
                     <label for="confirm-password">Confirm</label>
-                    <input type="password" name="confirm-password" id="confirm-password" required tabindex="8"><br><br>
+                    <input type="password" name="confirm-password" id="confirm-password" required><br><br>
                     Sex (optional)
-                    <input type="radio" name="male" id="male" value="male" tabindex="3"/>
+                    <input type="radio" name="male" id="male" value="male" />
                     <label for="male">male</label>
-                    <input type="radio" name="female" id="female" value="female" tabindex="4"/>
+                    <input type="radio" name="female" id="female" value="female" />
                     <label for="female">female</label>
                 </div><br>
                 <div class="form-section">
                     <!-- <option value="">Select a state</option> -->
                     <label for="state">State</label>
                     <i>Select a state</i><br>
-                    <select name="state" id="state" required tabindex="9">
+                    <select name="state" id="state" required>
                         <option value="California">California</option>
                         <option value="New York">New York</option>
                         <option value="Washington D.C.">Washington D.C.</option>
@@ -70,24 +75,33 @@
                         <option value="Indiana">Indiana</option>
                     </select>
                     <label for="city">City</label>
-                    <input type="text" name="city" id="city" required tabindex="10"><br><br>
+                    <input type="text" name="city" id="city" required><br><br>
                     <label for="address">Address</label>
-                    <inpuT type="text" name="address" id="address" required tabindex="11">
+                    <inpuT type="text" name="address" id="address" required>
                     <label for="phone">Phone</label>
-                    <input type="text" name="phone" id="phone" tabindex="12">
-                    </div><br>
+                    <input type="text" name="phone" id="phone">
+                </div>
                 <div class="form-section">
                     <div class="form-section2">
-                        <input type="checkbox" name="accept" id="accept" tabindex="3"/>
-                        <label id="accept" for="accept">I'm 18 years or older and agree to the terms and conditions of the <a href="#">Stark Co.</a></label><br>
+                        <input type="checkbox" name="accept" id="accept" />
+                        <label id="accept" for="accept">I'm 18 years or older and agree to the terms and conditions of
+                            the <a href="agreement.html">Stark Co.</a></label><br>
+                        <input class="button" type="reset" value="Delete">
                         <input class="button" type="submit" value="Sign Up!">
                     </div>
                 </div>
-            </fieldset>
+                </fieldset>
         </form><br><br>
     </main>
     <footer>
-
+        <div class="footer-container">
+            <div><img tittle="Marvel comics logo" src="img/footer_logo.png" alt="marverl_logo" /></div>
+            <div id="footer-text">
+                2023 Linkia FP | Desarollo de Aplicaciones Web<br>
+                Francisco Javier Martínez Álvarez
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
